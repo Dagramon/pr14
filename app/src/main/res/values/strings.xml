@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">pr14_1</string>
+    <string name="addalarm">Добавить будильник</string>
+    <string name="time">16:30</string>
+    <string name="date">14.01.2021</string>
+    <string name="repeat">Повторять каждый</string>
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
+    <string name="subbota">Суббота</string>
+    <string name="sunday">Воскресенье</string>
+    <string name="createalarm">Создать будильник</string>
+    <string name="ChangeTask">Изменить задачу</string>
+    <string name="WriteTask">Записать задачу</string>
+    <string name="DeleteTask">Удалить задачу</string>
+    <string name="Register">Регистрация</string>
+    <string name="Password">Пароль</string>
+    <string name="Settings">Настройки</string>
+    <string name="taskname">Заголовок задачи</string>
+    <string name="username">Имя пользователя</string>
+    <string name="email">Адрес электронной почты</string>
+    <string name="password">Пароль</string>
+</resources>

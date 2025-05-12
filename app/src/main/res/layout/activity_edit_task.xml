@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".EditTaskActivity"
+    tools:ignore="ExtraText">
+    <TableRow>
+        <TextView
+            android:fontFamily="sans-serif-black"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/ChangeTask"
+            android:textColor="@color/white"
+        />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/button"
+            android:src="@drawable/arrow"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </TableRow>
+
+    <TableRow>
+        <EditText
+
+            android:layout_weight="1"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:height="48dp"
+            android:background="@drawable/textbox"
+            android:textColorHint="@color/gray"
+            android:hint="@string/taskname"
+
+            />
+    </TableRow>>
+
+    <TableRow>
+
+        <ScrollView
+
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/fieldtime"
+
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ScrollView
+
+            android:layout_height="40dp"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/fielddate"
+
+            tools:ignore="SpeakableTextPresentCheck" />
+
+</TableRow>
+
+    <TableRow>
+
+        <EditText
+
+            android:layout_width="364dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/fielddescription"
+
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </TableRow>
+
+    <TableRow>
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:textSize="18sp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/bigbuttonred"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginStart="24dp"
+        android:layout_height="60dp"
+        android:text="@string/DeleteTask"
+        android:textAllCaps="false"
+
+        />
+
+    </TableRow>
+
+    <TableRow>
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bigbutton"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginStart="24dp"
+            android:layout_height="60dp"
+            android:text="@string/WriteTask"
+            android:textAllCaps="false"
+
+            />
+
+    </TableRow>
+
+
+
+</TableLayout>
