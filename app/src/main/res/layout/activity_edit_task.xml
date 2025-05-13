@@ -7,7 +7,10 @@
     android:background="@color/green"
     tools:context=".EditTaskActivity"
     tools:ignore="ExtraText">
-    <TableRow>
+    <TableRow
+        android:layout_marginTop="15dp"
+        >
+
         <TextView
             android:fontFamily="sans-serif-black"
             android:textSize="24sp"
@@ -15,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="10dp"
             android:text="@string/ChangeTask"
             android:textColor="@color/white"
         />
@@ -23,12 +26,14 @@
         <ImageButton
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="15dp"
+            android:layout_gravity="end"
             android:layout_marginEnd="15dp"
+            android:padding="8dp"
             android:background="@drawable/button"
             android:src="@drawable/arrow"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck"
+            android:onClick="BackToSettingsTask"
+            />
     </TableRow>
 
     <TableRow>
@@ -42,7 +47,7 @@
             android:background="@drawable/textbox"
             android:textColorHint="@color/gray"
             android:hint="@string/taskname"
-
+            android:textColor="@color/black"
             />
     </TableRow>>
 
@@ -51,23 +56,161 @@
         <ScrollView
 
             android:layout_height="40dp"
+            android:layout_width="0dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="30dp"
-            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/fieldtime"
+            android:layout_weight="1"
+            tools:ignore="SpeakableTextPresentCheck">
 
-            tools:ignore="SpeakableTextPresentCheck" />
+            <TableLayout
+                android:layout_width="120dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+                android:layout_height="15dp"
+                android:orientation="vertical"
+                >
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_17_30"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_17_00"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_16_30"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_16_00"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_15_30"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
 
         <ScrollView
 
             android:layout_height="40dp"
-
+            android:layout_width="0dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
+            android:layout_weight="1"
             android:background="@drawable/fielddate"
 
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck" >
+
+            <TableLayout
+                android:layout_width="120dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+                android:layout_height="15dp"
+                android:orientation="vertical"
+                >
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_16_01_2021"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_15_01_2021"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_14_01_2021"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_13_01_2021"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_12_01_2021"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
 
 </TableRow>
 
@@ -75,12 +218,16 @@
 
         <EditText
 
+            android:textColor="@color/black"
             android:layout_width="364dp"
             android:layout_height="120dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/fielddescription"
-
+            android:layout_marginTop="24dp"
+            android:gravity="top|start"
+            android:paddingTop="8dp"
+            android:background="@drawable/textbox"
+            android:hint="@string/taskDescription"
+            android:textColorHint="@color/gray"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </TableRow>
@@ -94,7 +241,9 @@
         android:background="@drawable/bigbuttonred"
         android:textAlignment="center"
         android:textColor="@color/white"
+        android:layout_weight="1"
         android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_height="60dp"
         android:text="@string/DeleteTask"
         android:textAllCaps="false"
@@ -112,7 +261,9 @@
             android:background="@drawable/bigbutton"
             android:textAlignment="center"
             android:textColor="@color/white"
+            android:layout_weight="1"
             android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             android:layout_height="60dp"
             android:text="@string/WriteTask"
             android:textAllCaps="false"

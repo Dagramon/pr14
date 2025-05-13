@@ -9,7 +9,7 @@
     android:orientation="vertical"
     >
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
     <TextView
@@ -23,44 +23,181 @@
         android:textColor="@color/white"
         />
 
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
         <ImageButton
+
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/button"
             android:src="@drawable/arrow"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck"
+            android:onClick="BackToSettingsAlarm"
+            />
         </LinearLayout>
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:ignore="ExtraText">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_height="35dp"
+        android:background="@drawable/fieldtime"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+         android:layout_width="0dp">
+        <TableLayout
+            android:layout_width="120dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="40dp"
+            android:layout_height="15dp"
+            android:orientation="vertical"
+            >
 
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/fieldtime"
-            android:text=""
-            />
+            <TableRow>
 
-        <TextView
-            android:background="@drawable/fielddate"
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginStart="65dp"
-            />
-        />
-    </LinearLayout>
+                <TextView
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:text="@string/_17_30"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:text="@string/_17_00"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:text="@string/_16_30"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:text="@string/_16_00"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:text="@string/_15_30"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
     </ScrollView>
+
+        <ScrollView
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/fielddate"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="15dp"
+             android:layout_width="0dp">
+            <TableLayout
+                android:layout_width="120dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+                android:layout_height="15dp"
+                android:orientation="vertical"
+                >
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_15_01_2021"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_15_01_2021"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_14_01_2021"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_13_01_2021"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:text="@string/_12_01_2021"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -76,9 +213,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <androidx.appcompat.widget.AppCompatToggleButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rectangle"
@@ -101,9 +238,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <androidx.appcompat.widget.AppCompatToggleButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rectangle"
@@ -127,9 +264,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <androidx.appcompat.widget.AppCompatToggleButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rectangle"
@@ -152,9 +289,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <androidx.appcompat.widget.AppCompatToggleButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rectangle"
@@ -177,9 +314,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <androidx.appcompat.widget.AppCompatToggleButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rectangle"
@@ -202,9 +339,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <androidx.appcompat.widget.AppCompatToggleButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rectangle"
@@ -227,9 +364,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <androidx.appcompat.widget.AppCompatToggleButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rectangle"

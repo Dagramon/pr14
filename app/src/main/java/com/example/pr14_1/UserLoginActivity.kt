@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
+import android.widget.Toast
 
 class UserLoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,10 +13,27 @@ class UserLoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_user_login)
     }
 
-    fun enter(view: View)
+    fun Enter(view: View)
     {
-        val intend = Intent(this@UserLoginActivity,EditTaskActivity::class.java)
-        startActivity(intend)
-        finish()
+
+        var username = findViewById<EditText>(R.id.username)
+        var email = findViewById<EditText>(R.id.email)
+        var password = findViewById<EditText>(R.id.password)
+
+        if (!username.text.isEmpty() && !email.text.isEmpty() && !password.text.isEmpty())
+        {
+            val intend = Intent(this@UserLoginActivity,settings_activity::class.java)
+            startActivity(intend)
+            finish()
+        }
+        else
+        {
+            Toast.makeText(this, "Заполните все поля", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    fun Leave(view: View)
+    {
+        this.finishAffinity()
     }
 }

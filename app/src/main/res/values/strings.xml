@@ -22,4 +22,15 @@
     <string name="username">Имя пользователя</string>
     <string name="email">Адрес электронной почты</string>
     <string name="password">Пароль</string>
+    <string name="taskDescription">Описание задачи</string>
+    <string name="_14_01_2021">14.01.2021</string>
+    <string name="_13_01_2021">13.01.2021</string>
+    <string name="_15_01_2021">15.01.2021</string>
+    <string name="_16_01_2021">16.01.2021</string>
+    <string name="_12_01_2021">12.01.2021</string>
+    <string name="_15_30">15:30</string>
+    <string name="_16_00">16:00</string>
+    <string name="_16_30">16:30</string>
+    <string name="_17_00">17:00</string>
+    <string name="_17_30">17:30</string>
 </resources>
